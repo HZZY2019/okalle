@@ -1,0 +1,16 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 27
+    }
+}
+
+dependencies {
+    implementation project(':kalle')
+    api 'com.squareup.okhttp3:okhttp-urlconnection:3.11.0'
+}
